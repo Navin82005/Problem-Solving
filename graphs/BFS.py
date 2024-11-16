@@ -10,7 +10,6 @@ class Graph:
     
     def BFS(self, vertex):
         visited = [False] * (max(self.graph) + 1)
-        # print(visited)
         queue = []
         
         queue.append(vertex)
