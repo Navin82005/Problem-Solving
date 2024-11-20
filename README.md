@@ -25,4 +25,13 @@ Here’s what you’ll find in this repo:
    cd problem-solving-python
   
 2. **Pick a Problem**
-Each file is named based on the problem description for easy navigation.
+   Each file is named based on the problem description for easy navigation.
+
+3. **Run the Code**
+   Use Python to execute and explore the solution:
+   ```bash
+   python problem_name.py
+4. **Try It Yourself**
+  Tweak the inputs or add your own edge cases to deepen your understanding.
+
+
