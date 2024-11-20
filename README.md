@@ -41,4 +41,12 @@ Here’s what you’ll find in this repo:
 
 Solving problems builds a growth mindset, sharpens your analytical skills, and opens doors to opportunities. Plus, it’s FUN! 🎉
 
+## 🧩 Categories of Problems
+   Here’s what you can explore:
+
+   - String Manipulation: Reverse strings, check for palindromes, and more.
+   - Sorting and Searching: Master comparison-based sorting and divide & conquer techniques.
+   - Dynamic Programming: Break down complex problems into simple subproblems.
+   - Graph Theory: Learn about paths, cycles, and connectivity.
+   - Mathematical Challenges: GCD, LCM, prime numbers, and more.
 
