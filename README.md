@@ -22,7 +22,7 @@ Here’s what you’ll find in this repo:
 ### 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/Navin82005/Problem-Solving.git
-   cd problem-solving-python
+   cd Problem-Solving
    ```
   
 ### 2. **Pick a Problem**
