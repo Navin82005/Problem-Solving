@@ -52,3 +52,12 @@ Solving problems builds a growth mindset, sharpens your analytical skills, and o
 
 ## ⭐️ Star the Repo
 If you find this helpful, don’t forget to give it a star! ⭐ It keeps the motivation alive and the coffee brewing. ☕
+
+## 📬 Connect with Me
+   Have questions or want to discuss problem-solving techniques? Reach out!
+
+   - Email: navin82005@gmail.com
+   - GitHub: [Navin82005](https://github.com/Navin82005)
+   > "Every solution starts with a question. Don’t be afraid to ask!"
+
+Happy Coding! 💻✨
