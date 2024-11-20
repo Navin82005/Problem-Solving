@@ -58,6 +58,7 @@ If you find this helpful, don’t forget to give it a star! ⭐ It keeps the mot
 
    - Email: navin82005@gmail.com
    - GitHub: [Navin82005](https://github.com/Navin82005)
+   - LinkedIn: [Naveen82005](https://www.linkedin.com/in/naveenn82005/)
    > "Every solution starts with a question. Don’t be afraid to ask!"
 
 Happy Coding! 💻✨
