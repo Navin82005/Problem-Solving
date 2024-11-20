@@ -50,3 +50,5 @@ Solving problems builds a growth mindset, sharpens your analytical skills, and o
    - Graph Theory: Learn about paths, cycles, and connectivity.
    - Mathematical Challenges: GCD, LCM, prime numbers, and more.
 
+## ⭐️ Star the Repo
+If you find this helpful, don’t forget to give it a star! ⭐ It keeps the motivation alive and the coffee brewing. ☕
