@@ -36,4 +36,9 @@ Here’s what you’ll find in this repo:
 ### 4. **Try It Yourself**
   Tweak the inputs or add your own edge cases to deepen your understanding.
 
+## 💡 Why Problem Solving?
+> "You don’t learn to walk by following rules. You learn by doing and by falling over." – Richard Branson
+
+Solving problems builds a growth mindset, sharpens your analytical skills, and opens doors to opportunities. Plus, it’s FUN! 🎉
+
 
