@@ -19,19 +19,21 @@ Here’s what you’ll find in this repo:
 
 ## 🛠 How to Use This Repository
 
-1. **Clone the Repository**  
+### 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/Navin82005/Problem-Solving.git
    cd problem-solving-python
+   ```
   
-2. **Pick a Problem**
+### 2. **Pick a Problem**
    Each file is named based on the problem description for easy navigation.
 
-3. **Run the Code**
+### 3. **Run the Code**
    Use Python to execute and explore the solution:
    ```bash
    python problem_name.py
-4. **Try It Yourself**
+   ```
+### 4. **Try It Yourself**
   Tweak the inputs or add your own edge cases to deepen your understanding.
 
 
