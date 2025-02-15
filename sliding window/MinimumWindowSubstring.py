@@ -28,23 +28,26 @@ class Solution:
         
         while r < n:
             c = s[r]
-            dic[c] = window.get(c, 0) + 1
+            window[c] = window.get(c, 0) + 1
             
-            if c in window and dic[c] == window[c]:
+            if c in dic and dic[c] == window[c]:
                 current += 1
             
-            while l < r and s[l] in window and window[s[l]] == dic[c]:
+            while l < r and current == req:
+                c = s[l]
+                
+                if r - l + 1 < min_l:
+                    min_l = r - l + 1
+                    res = [l, r]
+
+                window[c] -= 1
+                if c in dic and window[c] < dic[c]:
+                    current -= 1
                 l += 1
             
-            if r - l + 1 < min_l:
-                min_l = r - l + 1
-                res = [l, r]
-            
-            
-            
             r += 1
-        
+        print(l, r)
         return "" if res[0] == -1 else s[res[0]: res[1] + 1]
 
 # print(Solution().minWindow("bba", "ab"))
-print(Solution().minWindow("ADOBECODEBANC", "ABC"))
+# print(Solution().minWindow("ADOBECODEBANC", "ABC"))
