@@ -1,0 +1,159 @@
+1. Mega Square:
+    Given a value N, and length A. Find the maximum length square that can be formed by using the N squares.
+    Input:
+        N = 4, A = 3
+    Output:
+        Length of the Mega Square is 6
+    Explanation:
+        There are 4 squares, rearrange them in a way, 2 in one row and another two in below the placed squares, which forms a mega square with length 6.
+
+
+2. Teleportation Game:
+    Given a value N, assume a matrix of dimensions N x N, your task is to find the roll values of the die such that a player can reach the end quickly.
+    - You will be given a secondary 2D array which will be containing the coordinates of the teleportation portals.
+    - When you reach a portal you can get teleported to a destination portal coordinates.
+    - The portal array will be in the following format:
+        {{{2, 1}, {5, 2}}, { {6, 2},  {9, 0} }}
+            |        |         |         |
+        start p1   end p1   start p2   end p2
+
+    print the resulting die roll array.
+
+3. Snake and Appel Trees:
+    Given a N x N garden containing Apple trees which contains a specific number of appels. A snake is wondering around the garden aiming to eat maximum number of apples that is can.
+    The snake enters the garden (start at (0, 0)) and leaves the garden through (end at (n - 1, n - 1)).
+    the snake can only move in to direction right and bottom in the garden.
+    
+    your task is to find the maximum number of apples it can eat from the appel trees in the garden from the start to the end.
+    for every tree it climbs and eats the apple a new appel treen will appear in the garden. the coordinates for the new apple trees will be given in an array.
+    you need to navigate in a way such that the snake can eat the maximum number of appels.
+    print the maximum number of appels it can eat.
+
+
+
+1. Mega Square
+    Problem Description:
+    You are given N identical square tiles, each of side length A. Your task is to determine the maximum possible side length of a larger square (called a Mega Square) that can be formed by arranging all the given tiles without overlapping.
+    A tile can be placed adjacent to another tile either horizontally or vertically. You must use all N tiles, and the Mega Square must be completely filled with the smaller tiles.
+
+    Write a program to compute the side length of the Mega Square that can be constructed.
+
+    Input:
+        N — Number of small squares
+        A — Side length of each small square
+
+    Output:
+        Maximum side length of the Mega Square that can be formed
+
+    Example:
+    Input:
+        N = 4
+        A = 3
+
+    Output:
+        Length of the Mega Square is 6
+
+    Explanation:
+        You can place 2 tiles in a row and 2 below them (2x2 configuration), forming a 6x6 square.
+    
+    Input:
+        N = 3
+        A = 2
+
+    Output:
+        Length of the Mega Square is 2
+
+    Explanation:
+        A complete Mega square cannot be formed with only 3 tiles.
+
+
+2. 🎲 The Teleportation Game: Escape the Quantum Grid
+
+Scenario:
+
+Welcome to the **Quantum Grid Challenge**, a futuristic virtual-reality board game played on an **N x N grid**. Each cell on the grid is numbered from 1 to N*N in **row-major order**, just like the traditional Snake and Ladder game.
+
+You, the player, begin your journey at **cell 1** and your goal is to reach the final destination — **cell N × N**. You move across the board by rolling a **standard die (1 to 6)**. But beware — this is no ordinary board.
+
+Scattered across the board are **Teleportation Portals** — high-tech quantum gates that will instantly transport you from one location to another the moment you land on them. Each portal has a designated **start cell** and an **end cell**, provided as coordinates on the board. If you land on a portal’s start point, you will be immediately teleported to its destination — no roll required.
+
+Your mission is to find the **quickest escape route** — that is, determine the **sequence of die rolls** that will get you from cell 1 to cell N×N in the **fewest moves possible**, using teleporters strategically to your advantage.
+
+---
+
+Input:
+- `N` — the size of the board (N x N)
+- `portals` — a list of teleportation portals, where each portal is defined by a pair of coordinates: `{{x1, y1}, {x2, y2}}` indicating a teleport from `(x1, y1)` to `(x2, y2)`
+
+Output:
+- An array representing the optimal **sequence of die rolls** to reach the final cell in the minimum number of moves.
+
+---
+
+Example:
+```
+Input:
+N = 10
+portals = {
+    {{2, 1}, {5, 2}},
+    {{6, 2}, {9, 0}}
+}
+
+Output:
+[2, 3, 5, 4, 6, ...] // Minimum die rolls leading to victory
+```
+
+Hint:
+Think of this as navigating a graph, where each cell is a node. Teleporters add shortcuts — use them wisely!
+
+
+🐍 The Hungry Snake in the Enchanted Orchard (Extended Challenge)
+
+Scenario
+
+In the heart of the mystical Emerald Forest lies a hidden **N x N Enchanted Orchard**, where some trees bear magical apples, and some patches are barren. A curious and ever-hungry snake named **Sly** has made it his mission to collect as many apples as possible.
+
+Sly begins his journey at the **top-left corner** of the orchard — cell (0, 0). His goal is to reach the **bottom-right corner** — cell (N-1, N-1), where a legendary golden apple tree grows.
+
+The enchanted orchard only allows movement **to the right or downward**, never upward or to the left. At every cell with a tree that Sly visits, he eats all the apples it holds. However, not every cell contains trees — some may have zero apples (represented by `0`).
+
+To make things more exciting, the orchard possesses a magical power: **for every tree Sly eats from, a new apple tree sprouts somewhere else in the garden**! These new apple trees are specified as a list of coordinates and will appear immediately after Sly eats an existing tree.
+
+Your task is to help Sly find the most strategic path from (0, 0) to (N-1, N-1) so that he can **collect the maximum number of apples** — including from any new trees that appear during his journey.
+
+---
+
+Input:
+- A 2D array `grid[N][N]` representing the orchard. Each cell contains an integer indicating the number of apples at that position (0 means no tree).
+- A list `newTrees[]` of coordinate pairs `[(x1, y1), (x2, y2), ...]`, representing the positions of new apple trees that appear when Sly eats from any tree.
+
+Output:
+- An integer — the **maximum number of apples** Sly can collect from (0, 0) to (N-1, N-1), factoring in both original and newly appearing trees.
+
+---
+
+Example:
+```
+Input:
+grid = [
+  [2, 3, 0],
+  [0, 5, 0],
+  [4, 0, 1]
+]
+
+newTrees = [(1, 0), (2, 1)]
+
+Output:
+14
+```
+
+**Explanation:**
+One possible optimal path:
+```
+(0,0) → (0,1) → (1,1) → (2,1) → (2,2)
+```
+After visiting (0,0) and (0,1), new trees appear at (1,0) and (2,1), enhancing Sly’s options. The total apples collected is:
+```
+2 + 3 + 5 + 2 + 1 = 13 (including newly appeared tree values)
+```
+

@@ -1,3 +1,6 @@
 tempCodeRunnerFile.py
 tmp.py
 bruteforce\FindVowels.class
+*.exe
+*.class
+*\temp.py
